@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: green;
+    background-color: #048853;
     border-bottom: 1px solid #ccc;
 }
 
@@ -186,7 +186,7 @@ body {
 
 .description {
     /* Styling untuk teks deskripsi */
-    flex: 1; /* Menyesuaikan lebar teks */
+     /*flex: 1; Menyesuaikan lebar teks */
 }
 
 .subtitle {
@@ -472,4 +472,8 @@ p {
 .service p {
     color: #555;
     font-size: 16px;
+}
+footer{
+    text-align: center;
+    background-color: #00985B;
 }
