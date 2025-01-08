@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Rumah Impian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Gambar/Logo Icon.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="header">
+        <div class="logo">Rumah Impian</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Layanan.html">Services</a></li>
+                <li><a href="#">Product</a></li>          
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main">
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="/Gambar/Rekomendasi1.png" 
+                     alt="Go-greenHouse" class="shirt-image">
+            </div>
+
+            <!-- Description Section -->
+            <div class="description-section">
+                <p>
+                    Rumah modern dengan sentuhan natural<br>
+                    • Halaman depan yang hijau dan asri<br>
+                    • Fasilitas 3 kamar dengan ukuran masing-masing 1.5 x 1.5 m.<br>
+                    • Natural sceneric yang memanjakan mata.<br>
+                    • Dilengkapi kamar mandi minimalis dan efisien.<br>
+                    • Dilengkapi wastafel, tempat wudhu, dan mushola.
+                </p>
+                <button class="order-button" onclick="sendWhatsAppMessage()">Pesan</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        function sendWhatsAppMessage() {
+             
+            const phoneNumber = "6285179936986";  
+
+             
+            const message = encodeURIComponent("Apakah apartemen ini masih ada? Saya tertarik untuk menyewa/membeli");
+
+             
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+             
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Rumah Impian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Gambar/Logo Icon.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="header">
+        <div class="logo">Rumah Impian</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Layanan.html">Services</a></li>                
+                <li><a href="#">Product</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main">
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="/Gambar/Fitur Rumah 2.png" 
+                     alt="KamarHijau" class="shirt-image">
+            </div>
+
+            <!-- Description Section -->
+            <div class="description-section">
+                <p>
+                    Apartemen bergaya dengan sentuhan <i>Go-Green</i><br>
+                    • Desain bangunan modern dan sederhana</i><br>
+                    • Desain balkon dengan sentuhan natural<br>
+                    • Warna didominasi oleh hijau daun dan putih.<br>
+                    • Luas ruangan 8 x 10 m<br>
+                </p>
+                <button class="order-button" onclick="sendWhatsAppMessage()">Pesan</button>
+            </div>
+        </div>
+    </main>
+
+  
+    <script>
+        function sendWhatsAppMessage() {
+          
+            const phoneNumber = "6285179936986";  
+
+    
+            const message = encodeURIComponent("Apakah apartemen ini masih ada? Saya tertarik untuk menyewa");
+
+            
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html>

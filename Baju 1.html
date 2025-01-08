@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Rumah impian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Gambar/Logo Icon.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="header">
+        <div class="logo">Rumah Impian</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Layanan.html">Services</a></li>                
+                <li><a href="#">Product</a></li>
+    
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main">
+        <div class="content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="/Gambar/Fitur Rumah 1.png" 
+                     alt="rumahmendoo" class="shirt-image">
+            </div>
+
+            <!-- Description Section -->
+            <div class="description-section">
+                <p>
+                    Apartemen minimalis dengan gaya modern<br>
+                    • Tersedia 3 kamar dan 2 kamar mandi.<br>
+                    • lantai memakai granit unruk penyerapan panas.<br>
+                    • Warna ruangan cerah.<br>
+                    • Tersedia 3 jendela dan ventilasi untuk sirkulasi udara <br>
+                    • Tersedia balkon minimalis.<br>
+                </p>
+                <button class="order-button" onclick="sendWhatsAppMessage()">Sewa</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        function sendWhatsAppMessage() {
+           
+            const phoneNumber = "6285179936986"; 
+ 
+            const message = encodeURIComponent("Apakah apartemen ini masih ada? Saya tertarik untuk menyewa");
+
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</body>
+</html>
